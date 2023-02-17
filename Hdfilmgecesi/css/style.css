@@ -1,0 +1,546 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style: none;
+  color: #c2c2c2;
+  font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  background-color: rgba(128, 128, 128, 0.959);
+}
+
+.hdfilmgecesi-container {
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 150px;
+  max-width: 1070px;
+  height: 2000px;
+  background-color: rgb(46, 53, 59);
+  border-radius: 5px;
+}
+
+.hdfilmgecesi-container .hdfilmgecesi-navbar {
+  width: 100%;
+  height: 90px;
+  background-color: rgba(24, 23, 23, 0.89);
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 3px solid #0b27c7;
+}
+
+.hdfilmgecesi-logo {
+  width: 240px;
+  height: 40px;
+}
+
+.hdfilmgecesi-logo a img {
+  width: 100%;
+  height: 100%;
+}
+
+.hdfilmgecesi-navbar .nav-items {
+  display: flex;
+}
+
+.hdfilmgecesi-navbar .nav-items>li {
+  padding: 0 15px;
+}
+
+.hdfilmgecesi-navbar .nav-items a {
+  font-size: 20px;
+  font-family: 'Russo One', sans-serif;
+}
+
+.hdfilmgecesi-navbar .nav-items .drop-list {
+  font-size: 20px;
+  font-family: 'Russo One', sans-serif;
+}
+
+.hdfilmgecesi-navbar .nav-items a:hover {
+  color: rgb(15, 12, 192);
+}
+
+.hdfilmgecesi-navbar form {
+  display: flex;
+  height: 40px;
+  background: #1e232b;
+  min-width: 18% !important;
+  border: 1px solid rgb(185, 185, 185);
+}
+
+.hdfilmgecesi-navbar form .search-dat {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  color: #fff;
+  font-weight: 500;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.hdfilmgecesi-navbar .menu-icon,
+.hdfilmgecesi-navbar .cancel-icon,
+.hdfilmgecesi-navbar .search-icon {
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.hdfilmgecesi-navbar .menu-icon span,
+.hdfilmgecesi-navbar .cancel-icon,
+.hdfilmgecesi-navbar .search-icon {
+  display: none;
+}
+
+.toggle-button,
+.toggle-button:hover {
+  font-size: 20px;
+  font-family: 'Russo One', sans-serif;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  color: #0b27c7;
+}
+
+.toggle-button:hover .fa-caret-down {
+  color: #0b27c7;
+}
+
+.sub-menu {
+  display: none;
+  border-radius: 3px;
+  position: absolute;
+  background-color: #666666;
+  margin-top: 20px;
+  margin-left: -51px;
+  z-index: 2;
+}
+
+.sub-menu ul {
+  padding: 10px 0;
+}
+
+.sub-menu.active {
+  display: block;
+}
+
+.toggle-button .sub-menu li a {
+  font-size: 15px;
+  padding: 0.4rem;
+  display: block;
+  text-align: center;
+}
+
+.sub-menu::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 71px;
+  width: 0;
+  height: 0;
+  margin: -19px 0 0;
+  border: 10px solid transparent;
+  border-bottom-color: #666666;
+}
+
+.login {
+  display: none;
+  width: 90px;
+  height: 40px;
+  background-color: rgb(110, 37, 37);
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+.login2 {
+  width: 90px;
+  height: 40px;
+  background-color: rgb(110, 37, 37);
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.4rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/*----------------==slider-container==------------------*/
+#slider-container {
+  width: 100%;
+  height: 360px;
+  background-color: #666666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-card {
+  max-width: 100%;
+  height: 360px;
+  position: relative;
+}
+
+.movie-card-img {
+  width: 100%;
+  height: 100%;
+}
+
+.movie-card-img img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+.movie-card-text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, #161616b9 15%, rgba(73, 73, 73, 0.23) 64%);
+  display: flex;
+
+}
+
+.movie-card-bottom {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  top: 270px;
+  padding: 0 10px 10px 10px;
+}
+
+.movie-card-bottom-text {
+  width: 100%;
+}
+
+.üst-bilgi {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.movie-card-bottom>p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+.yıl {
+  font-size: 15px;
+  color: #fff;
+}
+
+.yorum {
+  font-size: 15px;
+  color: #fff;
+}
+
+.yorum .fa-comment {
+  padding-right: 5px;
+  color: #fff;
+}
+
+.imdb {
+  font-size: 15px;
+  color: gold;
+}
+
+.imdb .fa-star {
+  padding-right: 5px;
+  color: gold;
+}
+
+.dil {
+  width: 100%;
+  height: 23px;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  .hdfilmgecesi-navbar .nav-items {
+    position: absolute;
+    top: 240px;
+    left: -100%;
+    width: 100%;
+    height: 2000px;
+    background: #14181f;
+    display: inline-block;
+    padding: 10px 50px 0 50px;
+    text-align: center;
+    z-index: 101;
+    transition: left 0.3s ease;
+  }
+
+  .sub-menu {
+    top: 20px;
+    margin: auto;
+    padding: 0;
+    display: none;
+    border-radius: 3px;
+    position: relative;
+    background-color: #666666;
+    width: 200px;
+  }
+
+  .sub-menu::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 90px;
+    width: 0;
+    height: 0;
+    margin: -19px 0 0;
+    border: 10px solid transparent;
+    border-bottom-color: #666666;
+  }
+
+  .hdfilmgecesi-navbar .nav-items.active {
+    left: 0;
+  }
+
+
+  .hdfilmgecesi-navbar .nav-items>li {
+    line-height: 40px;
+    margin: 30px 0;
+  }
+
+  .hdfilmgecesi-navbar form {
+    position: absolute;
+    top: 247px;
+    right: 23px;
+    opacity: 0;
+    pointer-events: none;
+    transition: top 0.3s ease, opacity 0.1s ease;
+    z-index: 100;
+  }
+
+  .hdfilmgecesi-navbar form.active {
+    opacity: 1;
+    top: 270px;
+    pointer-events: auto;
+  }
+
+  .hdfilmgecesi-navbar form .search-dat {
+    border: 1px solid rgba(185, 185, 185, 0.425);
+    z-index: 100;
+  }
+
+  .hdfilmgecesi-navbar form::before {
+    position: absolute;
+    content: "";
+    top: -13px;
+    right: 0;
+    width: 0;
+    height: 0;
+    margin: -20px 0 0;
+    border: 10px solid transparent;
+    border-bottom-color: #1e232b;
+  }
+
+  .hdfilmgecesi-navbar form:after {
+    position: absolute;
+    content: "";
+    height: 60px;
+    width: calc(100% + 20px);
+    padding: 2px;
+    background: #1e232b;
+    border-radius: 2px;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .hdfilmgecesi-navbar .menu-icon {
+    display: block;
+  }
+
+  .hdfilmgecesi-navbar .search-icon,
+  .hdfilmgecesi-navbar .menu-icon span {
+    display: block;
+  }
+
+  .hdfilmgecesi-navbar .menu-icon span.hide,
+  .hdfilmgecesi-navbar .search-icon.hide {
+    display: none;
+  }
+
+  .hdfilmgecesi-navbar .cancel-icon.show {
+    display: block;
+  }
+
+  .login2 {
+    display: none;
+  }
+
+  .login {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 280px) {
+  .sub-menu {
+    width: 100%;
+  }
+
+  .sub-menu::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 65px;
+    width: 0;
+    height: 0;
+    margin: -20px 0 0;
+    border: 10px solid transparent;
+    border-bottom-color: #666666;
+  }
+
+  .hdfilmgecesi-navbar .menu-icon,
+  .hdfilmgecesi-navbar .cancel-icon,
+  .hdfilmgecesi-navbar .search-icon {
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .hdfilmgecesi-container .hdfilmgecesi-navbar {
+    padding: 0 0;
+  }
+}
+
+@media (max-width: 680px) {
+  #slider-container {
+    height: 320px;
+  }
+
+  .movie-card {
+    height: 320px;
+  }
+
+  .movie-card-bottom {
+    top: 230px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  #slider-container {
+    height: 290px;
+  }
+
+  .movie-card {
+    height: 290px;
+  }
+
+  .movie-card-bottom {
+    height: 82px;
+    top: 208px;
+  }
+
+  .movie-card-bottom>p {
+    font-size: 14px;
+  }
+
+  .yıl {
+    font-size: 13px;
+    color: #fff;
+  }
+  
+  .yorum {
+    font-size: 13px;
+    color: #fff;
+  }
+  
+  .yorum .fa-comment {
+    padding-right: 5px;
+    color: #fff;
+  }
+  
+  .imdb {
+    font-size: 13px;
+    color: gold;
+  }
+  
+  .imdb .fa-star {
+    padding-right: 5px;
+    color: gold;
+  }
+
+}
+
+@media (max-width: 280px) {
+  #slider-container {
+    height: 300px;
+  }
+
+  .movie-card {
+    height: 300px;
+  }
+
+  .movie-card-bottom {
+    height: 82px;
+    top: 217px;
+  }
+
+  .movie-card-bottom>p {
+    font-size: 15px;
+  }
+
+  .yıl {
+    font-size: 15px;
+    color: #fff;
+  }
+  
+  .yorum {
+    font-size: 15px;
+    color: #fff;
+  }
+  
+  .yorum .fa-comment {
+    padding-right: 5px;
+    color: #fff;
+  }
+  
+  .imdb {
+    font-size: 15px;
+    color: gold;
+  }
+  
+  .imdb .fa-star {
+    padding-right: 5px;
+    color: gold;
+  }
+}
