@@ -118,6 +118,11 @@ body {
   cursor: pointer;
 }
 
+.nav-items li:active,
+.nav-items li:hover {
+  background-color: initial !important;
+}
+
 .toggle-button:hover {
   color: #0b27c7;
 }
@@ -142,10 +147,6 @@ body {
 
 .sub-menu.active {
   display: block;
-}
-
-.sub-menu ul li{
-  background: none;
 }
 
 .toggle-button .sub-menu li a {
@@ -332,6 +333,10 @@ body {
     text-align: center;
     z-index: 101;
     transition: left 0.3s ease;
+  }
+
+  .tür {
+    font-size: 9px;
   }
 
   .sub-menu {
