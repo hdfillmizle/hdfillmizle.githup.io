@@ -70,7 +70,7 @@
             <li class="glide__slide">
               <div class="movie-card">
                 <div class="movie-card-img">
-                  <img src="images/post-9.jpg" alt="poster">
+                  <img src="images/post-7.jpg" alt="poster">
                 </div>
                 <div class="movie-card-text">
                   <div class="movie-card-bottom">
@@ -83,88 +83,19 @@
                     </div>
                     <p>Karayıp Korsanlar</p>
                     <div class="dil">
-                      <img src="https://img.icons8.com/color/48/null/turkey.png" /><i class="fa-solid fa-closed-captioning" style="margin: 3px 8px 3px 5px;"></i>
+                      <img src="https://img.icons8.com/color/48/null/turkey.png" /><i
+                        class="fa-solid fa-closed-captioning" style="margin: 3px 8px 3px 5px;"></i>
                       <p
                         style="font-size: 14px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding: 2px 0; color: aliceblue;">
                         Dublaj-Altyazı</p>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            
-            <li class="glide__slide">
-              <div class="movie-card">
-                <div class="movie-card-img">
-                  <img src="images/post-12.jpg" alt="poster">
-                </div>
-                <div class="movie-card-text">
-                  <div class="movie-card-bottom">
-                    <div class="movie-card-bottom-text">
-                      <div class="üst-bilgi">
-                        <div class="yıl">2022</div>
-                        <div class="yorum"><i class="fa-solid fa-comment"></i>360</div>
-                        <div class="imdb"><i class="fa-solid fa-star"></i>6.4</div>
-                      </div>
-                    </div>
-                    <p>Karayıp Korsanlar</p>
-                    <div class="dil">
-                      <img src="https://img.icons8.com/color/48/null/turkey.png" /><i class="fa-solid fa-closed-captioning" style="margin: 3px 8px 3px 5px;"></i>
-                      <p
-                        style="font-size: 14px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding: 2px 0; color: aliceblue;">
-                        Dublaj-Altyazı</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            
-            <li class="glide__slide">
-              <div class="movie-card">
-                <div class="movie-card-img">
-                  <img src="images/post-4.jpg" alt="poster">
-                </div>
-                <div class="movie-card-text">
-                  <div class="movie-card-bottom">
-                    <div class="movie-card-bottom-text">
-                      <div class="üst-bilgi">
-                        <div class="yıl">2022</div>
-                        <div class="yorum"><i class="fa-solid fa-comment"></i>360</div>
-                        <div class="imdb"><i class="fa-solid fa-star"></i>6.4</div>
-                      </div>
-                    </div>
-                    <p>Karayıp Korsanlar</p>
-                    <div class="dil">
-                      <img src="https://img.icons8.com/color/48/null/turkey.png" /><i class="fa-solid fa-closed-captioning" style="margin: 3px 8px 3px 5px;"></i>
-                      <p
-                        style="font-size: 14px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding: 2px 0; color: aliceblue;">
-                        Dublaj-Altyazı</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            
-            <li class="glide__slide">
-              <div class="movie-card">
-                <div class="movie-card-img">
-                  <img src="images/post-8.jpg" alt="poster">
-                </div>
-                <div class="movie-card-text">
-                  <div class="movie-card-bottom">
-                    <div class="movie-card-bottom-text">
-                      <div class="üst-bilgi">
-                        <div class="yıl">2022</div>
-                        <div class="yorum"><i class="fa-solid fa-comment"></i>360</div>
-                        <div class="imdb"><i class="fa-solid fa-star"></i>6.4</div>
-                      </div>
-                    </div>
-                    <p>Karayıp Korsanlar</p>
-                    <div class="dil">
-                      <img src="https://img.icons8.com/color/48/null/turkey.png" /><i class="fa-solid fa-closed-captioning" style="margin: 3px 8px 3px 5px;"></i>
-                      <p
-                        style="font-size: 14px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding: 2px 0; color: aliceblue;">
-                        Dublaj-Altyazı</p>
+
+                    <div class="tür">
+                      <span>Korku</span>
+                      <span>Gerilim</span>
+                      <span>Aksiyon</span>
+                      <span>Macera</span>
+                      <span>Fantastik</span>
                     </div>
                   </div>
                 </div>
@@ -188,11 +119,16 @@
       startAt: 0,
       perView: 4,
       gap: 0,
-      animationDuration: 120,
       breakpoints: {
-        1070: { perView: 3 },
+        1070: {
+          perView: 3,
+          animationDuration: 150,
+        },
         680: { perView: 2 },
-        280: { perView: 1 },
+        280: {
+          perView: 1,
+          animationDuration: 150,
+        },
       }
     }).mount()
   </script>
