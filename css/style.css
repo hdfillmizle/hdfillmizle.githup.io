@@ -225,15 +225,34 @@ body {
   width: 100%;
   height: 100%;
   background: linear-gradient(360deg, #161616b9 15%, rgba(73, 73, 73, 0.23) 64%);
-  display: flex;
+}
 
+.movie-card:hover .movie-card-text {
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  background: linear-gradient(360deg, #161616 15%, rgba(73, 73, 73, 0.23) 64%);
+  transition: 0.1s;
+}
+
+.konu {
+  height: 230px;
+  margin: 20px;
+  overflow: auto;
+  text-align: center;
+  color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 13px;
+  opacity: 0;
+  transition: 0.1s;
+}
+
+.movie-card:hover .konu {
+  opacity: 1;
 }
 
 .movie-card-bottom {
-  position: relative;
   width: 100%;
   height: 90px;
-  top: 270px;
   padding: 0 10px 10px 10px;
 }
 
@@ -247,25 +266,32 @@ body {
   display: flex;
 }
 
+.dil {
+  width: 100%;
+  height: 23px;
+  display: flex;
+  transition: 0.1s;
+}
+
 .movie-card:hover .tür {
   opacity: 1;
-  transition: all ease 0.5s;
+  transition: 0.1s;
 }
 
 .movie-card:hover .dil {
-  opacity: 0;
   position: absolute;
+  opacity: 0;
 }
 
 .tür {
   width: 100%;
+  position: relative;
   opacity: 0;
   justify-content: space-between;
   font-size: 11px;
   text-align: center;
   overflow: hidden;
   height: 23px;
-  position: relative;
   word-spacing: 5px;
 }
 
@@ -309,16 +335,10 @@ body {
   color: gold;
 }
 
-.dil {
-  width: 100%;
-  height: 23px;
-  display: flex;
-  transition: all ease 0.5s;
-}
 
 @media (max-width: 991px) {
   ::-webkit-scrollbar {
-    width: 1px;
+    width: 0;
   }
 
   .hdfilmgecesi-navbar .nav-items {
@@ -489,9 +509,12 @@ body {
   }
 
   .movie-card-bottom {
-    top: 230px;
+    height: 80px;
   }
 
+  .konu {
+    height: 200px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -501,11 +524,6 @@ body {
 
   .movie-card {
     height: 290px;
-  }
-
-  .movie-card-bottom {
-    height: 82px;
-    top: 208px;
   }
 
   .movie-card-bottom>p {
@@ -546,11 +564,6 @@ body {
 
   .movie-card {
     height: 300px;
-  }
-
-  .movie-card-bottom {
-    height: 82px;
-    top: 217px;
   }
 
   .movie-card-bottom>p {
