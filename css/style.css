@@ -144,11 +144,16 @@ body {
   display: block;
 }
 
+.sub-menu ul li{
+  background: none;
+}
+
 .toggle-button .sub-menu li a {
   font-size: 15px;
   padding: 0.4rem;
   display: block;
   text-align: center;
+  background: none;
 }
 
 .sub-menu::before {
