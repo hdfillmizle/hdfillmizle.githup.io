@@ -193,6 +193,15 @@ body {
 }
 
 /*----------------==slider-container==------------------*/
+.fa-angles-left {
+  font-size: 30px;
+  color: #c2c2c2a8;
+}
+.fa-angles-right {
+  font-size: 30px;
+  color: #c2c2c2a8;
+}
+
 #slider-container {
   width: 100%;
   height: 360px;
@@ -524,6 +533,15 @@ body {
 
   .movie-card {
     height: 290px;
+  }
+
+  .konu{
+    height: 190px;
+    margin: 10px;
+  }
+
+  .movie-card-bottom {
+    padding: 5px;
   }
 
   .movie-card-bottom>p {
