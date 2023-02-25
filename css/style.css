@@ -15,6 +15,7 @@
 
 body {
   background-color: rgba(128, 128, 128, 0.959);
+  user-select: none;
 }
 
 .hdfilmgecesi-container {
