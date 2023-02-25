@@ -10,7 +10,7 @@
   list-style: none;
   color: #c2c2c2;
   font-family: 'Poppins', sans-serif;
-  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
