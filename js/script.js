@@ -28,3 +28,7 @@ const subMenu = document.getElementsByClassName('sub-menu')[0]
 toggleButton.addEventListener('click', () => {
     subMenu.classList.toggle('active');
 });
+
+yourElement.ontouchstart = function(e) {
+  e.preventDefault();
+}
