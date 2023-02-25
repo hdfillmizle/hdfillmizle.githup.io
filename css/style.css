@@ -10,6 +10,7 @@
   list-style: none;
   color: #c2c2c2;
   font-family: 'Poppins', sans-serif;
+  user-select: none;
 }
 
 body {
@@ -184,25 +185,93 @@ body {
 }
 
 /*----------------==slider-container==------------------*/
-.fa-angles-left {
-  font-size: 30px;
-  color: #c2c2c2a8;
-}
-.fa-angles-right {
-  font-size: 30px;
-  color: #c2c2c2a8;
-}
-
 #slider-container {
   width: 100%;
-  height: 360px;
+  height: 310px;
   background-color: #666666;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.movie-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 
+.move-card-img {
+  width: 100%;
+  height: 240px;
+}
+
+.move-card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.move-kart-bottom {
+  width: 100%;
+  height: 70px;
+  padding-top: 5px;
+  background-color: black;
+}
+
+.move-name {
+  width: 100%;
+  height: 25px;
+  padding: 0 10px;
+  font-weight: 300;
+  font-family: 'Russo One', sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #fff;
+  letter-spacing: 0.7px;
+}
+
+.dil {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  padding: 0 10px;
+}
+
+.dil .altyazı {
+  padding-top: 2px;
+  margin: 0 5px;
+}
+
+.dil span{
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.türler {
+  width: 100%;
+  height: 15px;
+  margin: 2px 0;
+  font-size: 10px;
+  display: flex;
+}
+
+.türler span {
+  color: #0b27c7;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 5px;
+}
+
+
+
+.slider-left,
+.slider-right {
+  font-size: 40px;
+  color: #ffffffb0;
+
+}
 
 
 @media (max-width: 991px) {
