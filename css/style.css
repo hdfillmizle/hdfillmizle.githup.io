@@ -202,7 +202,7 @@ body {
 
 .movie-card {
   width: 100%;
-  height: 100%;
+  height: 310px;
   position: relative;
 }
 
@@ -229,11 +229,12 @@ body {
   padding: 0 10px;
   font-weight: 300;
   font-family: 'Russo One', sans-serif;
+  font-size: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #fff;
-  letter-spacing: 0.7px;
+  letter-spacing: 0.5px;
 }
 
 .dil {
@@ -279,6 +280,12 @@ body {
 
 }
 
+
+@media (max-width: 1070px) {
+  .hdfilmgecesi-container {
+    border-radius: 0;
+  }
+}
 
 @media (max-width: 991px) {
   .hdfilmgecesi-navbar .nav-items {
@@ -400,6 +407,37 @@ body {
 
   .login {
     display: inline-block;
+  }
+}
+
+@media (max-width: 322px) {
+  .dil span{
+    font-size: 11px;
+  }
+
+  .dil img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .dil .altyazı {
+    font-size: 12px;
+  }
+
+  .türler {
+    font-size: 9px;
+  }
+
+  #slider-container {
+    height: 290px;
+  }
+
+  .movie-card {
+    height: 290px;
+  }
+
+  .move-card-img {
+    height: 223px;
   }
 }
 
