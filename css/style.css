@@ -306,8 +306,10 @@ body {
 }
 
 .fregman-card {
+  width: 100%;
   background-color: #202225;
   padding: 20px 12px 20px 12px;
+  display: flex;
 }
 
 .fregman-slider {
