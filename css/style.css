@@ -28,8 +28,8 @@ body {
   padding: 0;
   margin-top: 150px;
   max-width: 1070px;
-  height: 2000px;
-  background-color: rgb(46, 53, 59);
+  height: 1000px;
+  background-color: rgb(22, 22, 22);
   border-radius: 5px;
 }
 
@@ -268,14 +268,111 @@ body {
   margin-left: 5px;
 }
 
-
-
 .slider-left,
 .slider-right {
   font-size: 40px;
   color: #ffffffb0;
 
 }
+
+/*----------------==slider-fregman==------------------*/
+.tutucu {
+  max-width: 1070px;
+  height: 1000px;
+  margin: 15px 10px 0 10px;
+}
+
+.text-card {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #575757;
+  align-items: baseline;
+  font-weight: 700;
+  font-size: 15px
+}
+
+.text-card a {
+  color: #fff;
+}
+
+.yakında {
+  height: 41px;
+  padding: 8px;
+  background-color: #202225;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+}
+
+.fregman-card {
+  background-color: #202225;
+  padding: 20px 12px 20px 12px;
+}
+
+.fregman-slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fregman {
+  max-width: 20%;
+  width: 20%;
+  min-width: 10%;
+  padding: 0 10px;
+}
+
+.fregman-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.fregman-img img {
+  max-width: 100%;
+  border: 3px solid #4635dc;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.text-truncate {
+  position: absolute;
+  background: #3437dd;
+  line-height: 1;
+  font-size: 13px;
+  padding: 2px 3px;
+  border-radius: 3px;
+  bottom: 0;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fregman-ismi {
+  font-size: 13px;
+  text-align: center;
+  padding-top: 5px;
+  max-height: 48px;
+  overflow: hidden;
+  color: #ebebeb;
+  font-weight: 500;
+}
+
+.fregman-ismi:hover {
+  color: #4635dc;
+}
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1070px) {
@@ -290,7 +387,7 @@ body {
     top: 240px;
     left: -100%;
     width: 100%;
-    height: 2000px;
+    height: 100%;
     background: #14181f;
     display: inline-block;
     padding: 10px 50px 0 50px;
@@ -414,6 +511,33 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .fregman-img img {
+    border: 2px solid #4635dc;
+  }
+
+  .fregman {
+    max-width: 80px;
+    width: 80px;
+    min-width: 80px;
+    padding: 0 5px;
+  }
+
+  .text-truncate {
+    font-size: 10px;
+  }
+
+  .fregman-slider {
+    overflow-x: auto !important;
+    overflow-scrolling: touch;
+  }
+
+  .tüm-fregmanlar {
+    font-size: 13px;
+  }
+
+}
+
 @media (max-width: 530px) {
   .move-name {
     font-size: 13px;
@@ -439,6 +563,10 @@ body {
 
   .türler {
     margin: 2px 0;
+  }
+
+  .tüm-fregmanlar {
+    display: none;
   }
 }
 
