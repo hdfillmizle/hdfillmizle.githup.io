@@ -299,7 +299,7 @@ body {
 .yakında {
   height: 41px;
   padding: 8px;
-  background-color: #202225;
+  background-color: #2d2d2e;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   position: relative;
@@ -308,7 +308,7 @@ body {
 .fregman-card {
   max-height: 182px;
   width: 100%;
-  background-color: #202225;
+  background-color: #2d2d2e;
   padding: 20px 12px 20px 12px;
   display: flex;
 }
