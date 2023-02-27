@@ -28,7 +28,7 @@ body {
   padding: 0;
   margin-top: 150px;
   max-width: 1070px;
-  height: 1000px;
+  height: 2000px;
   background-color: rgb(22, 22, 22);
   border-radius: 5px;
 }
@@ -201,7 +201,6 @@ body {
 }
 
 .movie-card {
-  width: 100%;
   height: 310px;
   position: relative;
 }
@@ -276,10 +275,9 @@ body {
 }
 
 /*----------------==slider-fregman==------------------*/
-.tutucu {
+.fregman-container {
   max-width: 1070px;
-  height: 1000px;
-  margin: 15px 10px 0 10px;
+  margin: 15px 10px 15px 10px;
 }
 
 .text-card {
@@ -335,12 +333,12 @@ body {
 
 .fregman-img img {
   max-width: 100%;
-  border: 3px solid #4635dc;
-  padding: 5px;
-  border-radius: 50%;
+  border: 3px solid #3538dc;
+  padding: 4px;
+  border-radius: 100%;
 }
 
-.text-truncate {
+.tarih {
   position: absolute;
   background: #3437dd;
   line-height: 1;
@@ -367,13 +365,6 @@ body {
 .fregman-ismi:hover {
   color: #4635dc;
 }
-
-
-
-
-
-
-
 
 
 
@@ -526,7 +517,7 @@ body {
     padding: 0 5px;
   }
 
-  .text-truncate {
+  .tarih {
     font-size: 10px;
   }
 
@@ -570,6 +561,10 @@ body {
 
   .tüm-fregmanlar {
     display: none;
+  }
+
+  .yakında {
+    font-size: 12px;
   }
 }
 
