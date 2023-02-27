@@ -306,6 +306,7 @@ body {
 }
 
 .fregman-card {
+  max-height: 182px;
   width: 100%;
   background-color: #202225;
   padding: 20px 12px 20px 12px;
