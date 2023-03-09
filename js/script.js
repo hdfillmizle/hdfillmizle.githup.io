@@ -29,6 +29,9 @@ toggleButton.addEventListener('click', () => {
     subMenu.classList.toggle('active');
 });
 
-yourElement.ontouchstart = function(e) {
-  e.preventDefault();
-}
+const yenieklenen = document.getElementsByClassName('yeni-eklenen')[0]
+const submenu2 = document.getElementsByClassName('sub-menu-2')[0]
+
+yenieklenen.addEventListener('click', () => {
+    submenu2.classList.toggle('active');
+});
