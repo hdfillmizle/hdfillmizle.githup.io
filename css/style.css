@@ -19,6 +19,10 @@
   user-select: none;
 }
 
+a:hover {
+  color: #3538dc;
+}
+
 body {
   background-color: rgba(128, 128, 128, 0.959);
 }
@@ -28,7 +32,6 @@ body {
   padding: 0;
   margin-top: 150px;
   max-width: 1070px;
-  height: 2000px;
   background-color: rgb(22, 22, 22);
   border-radius: 5px;
 }
@@ -72,10 +75,6 @@ body {
 .hdfilmgecesi-navbar .nav-items .drop-list {
   font-size: 20px;
   font-family: 'Russo One', sans-serif;
-}
-
-.hdfilmgecesi-navbar .nav-items a:hover {
-  color: rgb(15, 12, 192);
 }
 
 .hdfilmgecesi-navbar form {
@@ -207,64 +206,91 @@ body {
 
 .move-card-img {
   width: 100%;
-  height: 240px;
+  height: 100%;
 }
 
 .move-card-img img {
   width: 100%;
   height: 100%;
+}
+
+.movie-card-text {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, #161616c2 20%, rgba(73, 73, 73, 0.096) 40%);
+}
+
+.flag {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 5px 0 0;
+}
+
+.tr-flag {
+  height: 22px;
+  margin: 8px 3px;
+}
+
+.tr-flag img {
+  height: 100%;
+}
+
+.cc {
+  margin: 7px 3px;
+}
+
+.movie-card-bottom {
   position: relative;
+  top: 65%;
 }
 
-.move-kart-bottom {
-  width: 100%;
-  height: 70px;
-  padding-top: 5px;
-  background-color: black;
+.kat {
+  padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
 }
 
-.move-name {
-  width: 100%;
-  padding-left: 10px;
-  padding-right: 5px;
-  margin-bottom: 3px;
-  font-weight: 300;
-  font-family: 'Russo One', sans-serif;
+.yıl,
+.yorum {
+  color: #fff;
+}
+
+.imdb {
+  color: gold;
+}
+
+.movie-name {
+  color: #fff;
   font-size: 15px;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  margin: 4px 0;
+  padding: 0 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #fff;
-  letter-spacing: 0.5px;
 }
 
-.dil {
+.tür {
   width: 100%;
-  height: 20px;
+  height: 16px;
   display: flex;
-  padding: 0 10px;
-}
-
-.dil .altyazı {
-  padding-top: 2px;
-  margin: 0 5px;
-}
-
-.dil span {
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.türler {
-  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
   font-size: 10px;
-  display: flex;
+  padding: 0 10px;
+  overflow: hidden;
 }
 
-.türler span {
-  color: #0b27c7;
-  font-weight: 600;
-  margin-left: 5px;
+.tür span {
+  font-weight: 700;
+  color: #0004ff;
 }
 
 .slider-left,
@@ -359,15 +385,184 @@ body {
   max-height: 48px;
   overflow: hidden;
   color: #ebebeb;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-.fregman-ismi:hover {
+.fregman:hover .fregman-ismi {
   color: #4635dc;
 }
 
+.duyuru-reklam {
+  max-width: 1070px;
+  height: 245px;
+  margin: 40px 10px;
+  display: flex;
+}
 
+.duyuru {
+  width: 95%;
+  height: 170px;
+  margin-right: 35px;
+  background-color: #1c1ea14d;
+  border: 2px solid #0004ff;
+}
 
+.reklam {
+  width: 40%;
+  height: auto;
+  background-color: red;
+}
+
+/*========================-sdfgsdgs--=========================*/
+#film-container {
+  max-width: 1070px;
+  margin: 40px 10px;
+  display: flex;
+  border-radius: 5px;
+}
+
+.film-container {
+  display: flex;
+  width: 100%;
+}
+
+.başlık {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  border-bottom: 2px solid #575757;
+  position: relative;
+}
+
+.sub-menu-2 {
+  display: none;
+  top: 100%;
+  position: absolute;
+  background-color: #000000f8;
+  text-align: center;
+  border-top: 2px solid #000000de;
+  border-bottom: 2px solid rgb(87, 87, 87);
+  z-index: 1;
+}
+
+.sub-menu-2.active {
+  display: block;
+}
+
+.sub-menu-2 ul {
+  padding: 12px 0;
+}
+
+.sub-menu-2 ul li {
+  padding: 5px 21px;
+}
+
+.sub-menu-2 ul li a {
+  font-weight: 500;
+  color: #dadada;
+}
+
+.sub-menu-2 ul li a:hover {
+  color: rgb(15, 12, 192);
+}
+
+.başlık .yeni-eklenen {
+  display: inline-block;
+  background-color: #2d2d2e;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 15px;
+  color: #fff;
+}
+
+.film-tut {
+  width: 100%;
+  height: 100%;
+}
+
+.film-alan {
+  width: 100%;
+  padding: 35px 12px 35px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #2d2d2e;
+}
+
+.movie-card-2 {
+  position: relative;
+  margin: 0 8px 8px 0;
+  height: 265px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.movie-card-bottom-2 {
+  position: relative;
+  top: 63%;
+}
+
+.kat-2 {
+  padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.movie-name-2 {
+  color: #fff;
+  font-size: 13px;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  margin: 5px 0;
+  padding: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tür-2 {
+  width: 100%;
+  height: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 8px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.tür-2 span {
+  font-weight: 600;
+  color: #0004ff;
+}
+
+.row {
+  width: 35%;
+  height: 100%;
+  padding: 60px 0 0 10px;
+}
+
+.dublaj {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.tr-izle {
+  height: 40px;
+  color: #fff;
+  background-color: rgb(26, 18, 97);
+  border-radius: 10px;
+}
+
+.tr-izle img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
 
 @media (max-width: 1070px) {
   .hdfilmgecesi-container {
@@ -495,14 +690,6 @@ body {
   .login {
     display: inline-block;
   }
-
-  .türler {
-    width: 100%;
-    font-size: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }
 
 @media (max-width: 768px) {
@@ -523,7 +710,7 @@ body {
 
   .fregman-slider {
     overflow-x: auto !important;
-    overflow-scrolling: touch;
+    -overflow-scrolling: touch;
   }
 
   .tüm-fregmanlar {
@@ -533,31 +720,6 @@ body {
 }
 
 @media (max-width: 530px) {
-  .move-name {
-    font-size: 13px;
-    letter-spacing: 0.3px;
-  }
-
-  .dil {
-    height: 15px;
-  }
-
-  .dil span {
-    font-size: 11px;
-  }
-
-  .dil img {
-    width: 17px;
-    height: 17px;
-  }
-
-  .dil .altyazı {
-    font-size: 13px;
-  }
-
-  .türler {
-    margin: 2px 0;
-  }
 
   .tüm-fregmanlar {
     display: none;
@@ -569,33 +731,24 @@ body {
 }
 
 @media (max-width: 322px) {
-  .dil span {
-    font-size: 11px;
-  }
-
-  .dil img {
-    width: 15px;
-    height: 15px;
-  }
-
-  .dil .altyazı {
-    font-size: 12px;
-  }
-
-  .türler {
-    font-size: 9px;
-  }
 
   #slider-container {
-    height: 290px;
+    height: 270px;
   }
 
   .movie-card {
-    height: 290px;
+    height: 270px;
   }
 
-  .move-card-img {
-    height: 223px;
+  .kat {
+    padding: 0 10px;
+    font-size: 11px;
+  }
+
+  .tür {
+    height: 15px;
+    overflow: hidden;
+    font-size: 9px;
   }
 }
 
@@ -634,9 +787,5 @@ body {
 @media (max-width: 352px) {
   .hdfilmgecesi-container .hdfilmgecesi-navbar {
     padding: 0;
-  }
-
-  .türler span {
-    margin-left: 3px;
   }
 }
