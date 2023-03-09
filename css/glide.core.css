@@ -1,7 +1,9 @@
+.st,
 .glide {
   position: relative;
   width: 100%;
   box-sizing: border-box; }
+  .st,
   .glide * {
     box-sizing: inherit; }
   .glide__track {
