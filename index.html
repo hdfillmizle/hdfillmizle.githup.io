@@ -1,362 +1,748 @@
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hdfilmgecesi</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/glide.core.css" />
-    <link rel="stylesheet" href="css/glide.theme.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="images/Hdfilmgecesi-short-icno.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <div class="hdfilmgecesi-container">
-      <nav class="hdfilmgecesi-navbar">
-        <div class="menu-icon"><span class="fas fa-bars"></span></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hdfilmgecesi</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/glide.core.css" />
+  <link rel="stylesheet" href="css/glide.theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="shortcut icon" href="images/Hdfilmgecesi-short-icno.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
 
-        <div class="hdfilmgecesi-logo">
-          <a href="#"
-            ><img src="images/text-1675999857207.png" alt="Hdfilmgecesi"
-          /></a>
-        </div>
+<body>
+  <div class="hdfilmgecesi-container">
+    <nav class="hdfilmgecesi-navbar">
+      <div class="menu-icon"><span class="fas fa-bars"></span></div>
 
-        <div class="nav-items">
-          <li><a href="#">Filmler</a></li>
-          <li><a href="#">Diziler</a></li>
-          <li class="toggle-button">
-            Türler<i
-              style="margin-left: 7px"
-              class="fa-sharp fa-solid fa-caret-down"
-            ></i>
-            <div class="sub-menu">
-              <ul>
-                <li><a href="">Aksiyon-Filmler</a></li>
-                <li><a href="">Macera-Filmler</a></li>
-                <li><a href="">Fantastik-Filmler</a></li>
-                <li><a href="">Bilim-Kurgu-Filmler</a></li>
-                <li><a href="">Dram-Filmler</a></li>
-                <li><a href="">Animasyon-Filmler</a></li>
-                <li><a href="">Gizem-Filmler</a></li>
-                <li><a href="">Komedi-Filmleri</a></li>
-                <li><a href="">Korku-Gerilim</a></li>
-                <li><a href="">Polisiye-Filmler</a></li>
-                <li><a href="">Polisiye-Filmler</a></li>
-                <li><a href="">Yerli-Filmler</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">İletişim</a></li>
-          <div class="login">Giriş</div>
-        </div>
-        <div class="search-icon"><span class="fas fa-search"></span></div>
-        <div class="cancel-icon"><span class="fas fa-times"></span></div>
-
-        <form action="#">
-          <input
-            type="search"
-            class="search-dat"
-            placeholder="Film veya Dizi Ara"
-            required
-          />
-        </form>
-        <div class="login2">Giriş</div>
-      </nav>
-
-      <!--=========================Movie-card-slider==================================-->
-      <section id="slider-container">
-        <div class="glide">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <li class="glide__slide">
-                <div class="movie-card">
-                  <div class="move-card-img">
-                    <img src="images/post-10.jpg" alt="Hdfilmgecesi" />
-                  </div>
-                  <div class="movie-card-text">
-                    <div class="flag">
-                      <div class="tr-flag">
-                        <img src="images/tr-flag.png" alt="">
-                      </div>
-                      <div class="cc">
-                        <i class="fa-solid fa-closed-captioning"></i>
-                      </div>
-                    </div>
-                    <div class="movie-card-bottom">
-                      <div class="kat">
-                        <span class="yıl">2022</span>
-                        <span class="yorum"><i class="fa-solid fa-comment" style="color: #fff; padding-right: 5px;"></i>255</span>
-                        <span class="imdb"><i class="fa-solid fa-star" style="color: gold; margin-right: 5px;"></i>7.5</span>
-                      </div>
-                      <p class="movie-name">Wakanda</p>
-                      <div class="tür">
-                        <span>Macera</span>,
-                        <span>Aksiyon</span>,
-                        <span>Fantastik</span>,
-                        <span>Korku</span>,
-                        <span>Gerilim</span>,
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-              <i class="fa-solid fa-angles-left slider-left"></i>
-            </button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-              <i class="fa-solid fa-angles-right slider-right"></i>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!--======================Fregman==========================-->
-      <div class="fregman-container">
-        <div class="text-card">
-          <div class="yakında">
-            <span style="color: #fff;"><i class="fa-brands fa-youtube" style="margin-right: 5px; color: #fff;"></i>Yakında Gelecek Filmler</span>
-          </div>
-          <a href="#" class="tüm-fregmanlar">Tüm Fregmanlar</a>
-        </div>
-        <div class="fregman-card">
-          <div class="fregman-slider">
-            <a href="#" class="fregman">
-              <div class="fregman-img">
-                <img
-                  src="fregman-img/john-wick-chapter-4.jpg"
-                  alt="Hdfilmgecesi"
-                />
-                <date class="tarih">10 Mart</date>
-              </div>
-              <div class="fregman-ismi">John Wick: Chapter 4</div>
-            </a>
-
-            <a href="#" class="fregman">
-              <div class="fregman-img">
-                <img
-                  src="fregman-img/Hızlı ve Öfkeli 10.jpg"
-                  alt="Hdfilmgecesi"
-                />
-                <date class="tarih">19 Mayıs</date>
-              </div>
-              <div class="fregman-ismi">Hızlı ve Öfkeli 10</div>
-            </a>
-
-            <a href="#" class="fregman">
-              <div class="fregman-img">
-                <img
-                  src="fregman-img/Aquaman-Kayıp-Krallık.jpg"
-                  alt="Hdfilmgecesi"
-                />
-                <date class="tarih">25 Aralık</date>
-              </div>
-              <div class="fregman-ismi">Aquaman ve Kayıp Krallık</div>
-            </a>
-
-            <a href="#" class="fregman">
-              <div class="fregman-img">
-                <img
-                  src="fregman-img/shazam-fury-of-the-gods.jpg"
-                  alt="Hdfilmgecesi"
-                />
-                <date class="tarih">17 Mart</date>
-              </div>
-              <div class="fregman-ismi">Shazam! Fury of the Gods</div>
-            </a>
-
-            <a href="#" class="fregman">
-              <div class="fregman-img">
-                <img
-                  src="fregman-img/guardians-of-the-galaxy-volume-3.jpg"
-                  alt="Hdfilmgecesi"
-                />
-                <date class="tarih">05 Mayıs</date>
-              </div>
-              <div class="fregman-ismi">galaxsinin koruyucuları 3</div>
-            </a>
-
-            <a href="#" class="fregman">
-              <div class="fregman-img">
-                <img
-                  src="fregman-img/transformers-rise-of-the-beasts-4_list.jpg"
-                  alt="Hdfilmgecesi"
-                />
-                <date class="tarih">9 Haziran</date>
-              </div>
-              <div class="fregman-ismi">
-                Transformers: Canavarların Yükselişi
-              </div>
-            </a>
-
-            <a href="#" class="fregman">
-              <div class="fregman-img">
-                <img src="fregman-img/The Flash.jpg" alt="Hdfilmgecesi" />
-                <date class="tarih">16 Haziran</date>
-              </div>
-              <div class="fregman-ismi">The Flash</div>
-            </a>
-
-            <a href="#" class="fregman">
-              <div class="fregman-img">
-                <img src="fregman-img/Wonka.jpg" alt="Hdfilmgecesi" />
-                <date class="tarih">15 Aralık</date>
-              </div>
-              <div class="fregman-ismi">Wonka</div>
-            </a>
-
-            <a href="#" class="fregman">
-              <div class="fregman-img">
-                <img
-                  src="fregman-img/Süper Mario Kardeşler Filmi.jpg"
-                  alt="Hdfilmgecesi"
-                />
-                <span class="tarih">7 Nisan</span>
-              </div>
-              <div class="fregman-ismi">Süper Mario Kardeşler Filmi</div>
-            </a>
-          </div>
-        </div>
+      <div class="hdfilmgecesi-logo">
+        <a href="#"><img src="images/text-1675999857207.png" alt="Hdfilmgecesi" /></a>
       </div>
 
-      <div id="film-container">
-        <div class="film-container">
-          <div class="film-tut">
-            <div class="başlık">
-              <h3 class="yeni-eklenen">Yeni Eklenenler
-                <i class="fa-solid fa-caret-down" style=" margin-left: 9px; color: #fff;"></i>
-              </h3>
-              <div class="sub-menu-2">
-                <ul>
-                  <li><a href="">Yeni Eklenen Filmler</a></li>
-                  <li><a href="">Yeni Eklenen Diziler</a></li>
-                  <li><a href="">İmdb 7+ Olanlar</a></li>
-                  <li><a href="">En Çok Beğenilenler</a></li>
-                  <li><a href="">Tavsiye Edilenler</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="film-alan">
-              <div class="movie-card-2">
+      <div class="nav-items">
+        <li><a href="#">Filmler</a></li>
+        <li><a href="#">Diziler</a></li>
+        <li class="toggle-button">
+          Türler<i style="margin-left: 7px" class="fa-sharp fa-solid fa-caret-down"></i>
+          <div class="sub-menu">
+            <ul>
+              <li><a href="">Aksiyon-Filmler</a></li>
+              <li><a href="">Macera-Filmler</a></li>
+              <li><a href="">Fantastik-Filmler</a></li>
+              <li><a href="">Bilim-Kurgu-Filmler</a></li>
+              <li><a href="">Dram-Filmler</a></li>
+              <li><a href="">Animasyon-Filmler</a></li>
+              <li><a href="">Gizem-Filmler</a></li>
+              <li><a href="">Komedi-Filmleri</a></li>
+              <li><a href="">Korku-Gerilim</a></li>
+              <li><a href="">Polisiye-Filmler</a></li>
+              <li><a href="">Polisiye-Filmler</a></li>
+              <li><a href="">Yerli-Filmler</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">İletişim</a></li>
+        <div class="login">Giriş</div>
+      </div>
+      <div class="search-icon"><span class="fas fa-search"></span></div>
+      <div class="cancel-icon"><span class="fas fa-times"></span></div>
+
+      <form action="#">
+        <input type="search" class="search-dat" placeholder="Film veya Dizi Ara" required />
+      </form>
+      <div class="login2">Giriş</div>
+    </nav>
+
+    <!--=========================Movie-card-slider==================================-->
+    <section id="slider-container">
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="movie-card">
                 <div class="move-card-img">
-                  <img src="images/post-4.jpg" alt="Hdfilmgecesi" />
+                  <img src="images/yeşil-fener.jpg" alt="Hdfilmgecesi" />
                 </div>
                 <div class="movie-card-text">
                   <div class="flag">
                     <div class="tr-flag">
-                      <img src="images/tr-flag.png" alt="">
+                      <img src="images/tr-flag.png" alt="" />
                     </div>
                     <div class="cc">
                       <i class="fa-solid fa-closed-captioning"></i>
                     </div>
                   </div>
-                  <div class="movie-card-bottom-2">
-                    <div class="kat-2">
+                  <div class="movie-card-bottom">
+                    <div class="kat">
                       <span class="yıl">2022</span>
-                      <span class="yorum"><i class="fa-solid fa-comment" style="color: #fff; padding-right: 5px;"></i>255</span>
-                      <span class="imdb"><i class="fa-solid fa-star" style="color: gold; margin-right: 5px;"></i>7.5</span>
+                      <span class="yorum"><i class="fa-solid fa-comment"
+                          style="color: #fff; padding-right: 5px"></i>255</span>
+                      <span class="imdb"><i class="fa-solid fa-star"
+                          style="color: gold; margin-right: 5px"></i>7.5</span>
                     </div>
-                    <p class="movie-name-2">nasıl paşa la</p>
-                    <div class="tür-2">
-                      <span>Macera</span>,
-                      <span>Asksiyon</span>,
-                      <span>Aksiyon</span>,
-                      <span>Aksiyon</span>
-                    </div>
+                    <p class="movie-name">Yeşil Fener</p>
+                    <p class="movie-name-en">Green Lantern</p>
                   </div>
                 </div>
               </div>
+            </li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <i class="fa-solid fa-angles-left slider-left"></i>
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <i class="fa-solid fa-angles-right slider-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
 
-              <div class="movie-card-2">
-                <div class="move-card-img">
-                  <img src="images/post-4.jpg" alt="Hdfilmgecesi" />
-                </div>
-                <div class="movie-card-text">
-                  <div class="flag">
-                    <div class="tr-flag">
-                      <img src="images/tr-flag.png" alt="">
-                    </div>
-                    <div class="cc">
-                      <i class="fa-solid fa-closed-captioning"></i>
-                    </div>
-                  </div>
-                  <div class="movie-card-bottom-2">
-                    <div class="kat-2">
-                      <span class="yıl">2022</span>
-                      <span class="yorum"><i class="fa-solid fa-comment" style="color: #fff; padding-right: 5px;"></i>255</span>
-                      <span class="imdb"><i class="fa-solid fa-star" style="color: gold; margin-right: 5px;"></i>7.5</span>
-                    </div>
-                    <p class="movie-name-2">nasıl paşa la</p>
-                    <div class="tür-2">
-                      <span>Macera</span>,
-                      <span>Asksiyon</span>,
-                      <span>Aksiyon</span>,
-                      <span>Aksiyon</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
+    <!--======================Fregman==========================-->
+    <div class="fregman-container">
+      <div class="text-card">
+        <div class="yakında">
+          <span style="color: #fff"><i class="fa-brands fa-youtube" style="margin-right: 5px; color: #fff"></i>Yakında
+            Gelecek Filmler</span>
+        </div>
+        <a href="#" class="tüm-fregmanlar">Tüm Fregmanlar</a>
+      </div>
+      <div class="fregman-card">
+        <div class="fregman-slider">
+          <a href="#" class="fregman">
+            <div class="fregman-img">
+              <img src="fregman-img/john-wick-chapter-4.jpg" alt="Hdfilmgecesi" />
+              <date class="tarih">10 Mart</date>
             </div>
-          </div>
-          <div class="row">
-            <div class="dublaj">
-              <div class="tr-izle"><a href="#"><img src="images/tr-flag.png">Türkçe Dublaj İzle</a></div>
-              <div class="cc-izle">Türkçe Altyazılı İzle</div>
+            <div class="fregman-ismi">John Wick: Chapter 4</div>
+          </a>
+
+          <a href="#" class="fregman">
+            <div class="fregman-img">
+              <img src="fregman-img/Hızlı ve Öfkeli 10.jpg" alt="Hdfilmgecesi" />
+              <date class="tarih">19 Mayıs</date>
             </div>
-          </div>
-          </div>
+            <div class="fregman-ismi">Hızlı ve Öfkeli 10</div>
+          </a>
+
+          <a href="#" class="fregman">
+            <div class="fregman-img">
+              <img src="fregman-img/Aquaman-Kayıp-Krallık.jpg" alt="Hdfilmgecesi" />
+              <date class="tarih">25 Aralık</date>
+            </div>
+            <div class="fregman-ismi">Aquaman ve Kayıp Krallık</div>
+          </a>
+
+          <a href="#" class="fregman">
+            <div class="fregman-img">
+              <img src="fregman-img/shazam-fury-of-the-gods.jpg" alt="Hdfilmgecesi" />
+              <date class="tarih">17 Mart</date>
+            </div>
+            <div class="fregman-ismi">Shazam! Fury of the Gods</div>
+          </a>
+
+          <a href="#" class="fregman">
+            <div class="fregman-img">
+              <img src="fregman-img/guardians-of-the-galaxy-volume-3.jpg" alt="Hdfilmgecesi" />
+              <date class="tarih">05 Mayıs</date>
+            </div>
+            <div class="fregman-ismi">galaxsinin koruyucuları 3</div>
+          </a>
+
+          <a href="#" class="fregman">
+            <div class="fregman-img">
+              <img src="fregman-img/transformers-rise-of-the-beasts-4_list.jpg" alt="Hdfilmgecesi" />
+              <date class="tarih">9 Haziran</date>
+            </div>
+            <div class="fregman-ismi">
+              Transformers: Canavarların Yükselişi
+            </div>
+          </a>
+
+          <a href="#" class="fregman">
+            <div class="fregman-img">
+              <img src="fregman-img/The Flash.jpg" alt="Hdfilmgecesi" />
+              <date class="tarih">16 Haziran</date>
+            </div>
+            <div class="fregman-ismi">The Flash</div>
+          </a>
+
+          <a href="#" class="fregman">
+            <div class="fregman-img">
+              <img src="fregman-img/Wonka.jpg" alt="Hdfilmgecesi" />
+              <date class="tarih">15 Aralık</date>
+            </div>
+            <div class="fregman-ismi">Wonka</div>
+          </a>
+
+          <a href="#" class="fregman">
+            <div class="fregman-img">
+              <img src="fregman-img/Süper Mario Kardeşler Filmi.jpg" alt="Hdfilmgecesi" />
+              <span class="tarih">7 Nisan</span>
+            </div>
+            <div class="fregman-ismi">Süper Mario Kardeşler Filmi</div>
+          </a>
         </div>
       </div>
     </div>
 
-    <script src="js/script.js"></script>
-    <script src="js/glide.js"></script>
-    <script>
-      new Glide(".glide", {
-        type: "carousel",
-        startAt: 0,
-        perView: 5,
-        gap: 0,
-        breakpoints: {
-          991: { perView: 4, animationDuration: 150 },
-          842: { perView: 3, animationDuration: 150 },
-          632: { perView: 2, animationDuration: 150 },
-          280: { perView: 1, animationDuration: 150 },
-        },
-      }).mount();
-    </script>
-    <script>
-      new Glide(".st", {
-        type: "carousel",
-        startAt: 0,
-        perView: 5,
-        gap: 10,
-        breakpoints: {
-          632: { perView: 2, animationDuration: 150 },
-          280: { perView: 1, animationDuration: 150 },
-        },
-      }).mount();
-    </script>
-  </body>
+
+    <div class="duyuru">
+      <i class="fa-solid fa-bullhorn" style="margin-right: 10px; font-size: 18px;"></i>Değerli Hdfilmgecesi Ailesi,
+      <strong>https://www.hdfilmgecesi.life/</strong> adres değişikliğinden etkilenmemek için
+      <strong>https://www.hdfilmcehennemi.com/</strong> sık kullanılanlara ekleyiniz.
+      <hr>
+      <div class="uyum">
+        <span class="tv-pc-ph">
+          <div class="laptop">
+            <i class="fa-solid fa-laptop"></i>
+          </div>
+          Android uygulamamız yayınlandı, buradan indirebilirsiniz.
+        </span>
+        <a href="#" class="app">
+          <i class="fa-brands fa-google-play"></i>
+          Apk İndir
+        </a>
+      </div>
+    </div>
+
+    <!--======================================================================================================-->
+    <div class="alan-main" style="box-sizing: border-box; display: flex; flex-flow: row wrap">
+      <div class="content">
+        <div class="blok-icerik">
+          <hi class="blok-baslik">Yeni Eklenenler<i class="fa-solid fa-caret-down"
+              style="margin-left: 6px; color: rgb(219, 219, 219)"></i></hi>
+          <ul class="list">
+            <li class="film">
+              <div class="movie-card-1">
+                <div class="move-card-img">
+                  <img src="images/yeşil-fener.jpg" alt="Hdfilmgecesi" style="border-radius: 6px" />
+                </div>
+                <div class="movie-card-text" style="border-radius: 6px">
+                  <div class="flag">
+                    <div class="tr-flag">
+                      <img src="images/tr-flag.png" alt="" />
+                    </div>
+                    <div class="cc">
+                      <i class="fa-solid fa-closed-captioning"></i>
+                    </div>
+                  </div>
+                  <div class="movie-card-bottom">
+                    <div class="kat">
+                      <span class="yıl">2022</span>
+                      <span class="yorum"><i class="fa-solid fa-comment"
+                          style="color: #fff; padding-right: 5px"></i>255</span>
+                      <span class="imdb"><i class="fa-solid fa-star"
+                          style="color: gold; margin-right: 5px"></i>7.5</span>
+                    </div>
+                    <p class="movie-name">Yeşil Fener</p>
+                    <p class="movie-name-en">Green Lantern</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="film">
+              <div class="movie-card-1">
+                <div class="move-card-img">
+                  <img src="images/post-5.jpg" alt="Hdfilmgecesi" style="border-radius: 6px" />
+                </div>
+                <div class="movie-card-text" style="border-radius: 6px">
+                  <div class="flag">
+                    <div class="tr-flag">
+                      <img src="images/tr-flag.png" alt="" />
+                    </div>
+                    <div class="cc">
+                      <i class="fa-solid fa-closed-captioning"></i>
+                    </div>
+                  </div>
+                  <div class="movie-card-bottom">
+                    <div class="kat">
+                      <span class="yıl">2022</span>
+                      <span class="yorum"><i class="fa-solid fa-comment"
+                          style="color: #fff; padding-right: 5px"></i>255</span>
+                      <span class="imdb"><i class="fa-solid fa-star"
+                          style="color: gold; margin-right: 5px"></i>7.5</span>
+                    </div>
+                    <p class="movie-name">Kara Panter: Yaşasın Wakanda</p>
+                    <p class="movie-name-en">Wakamba Forever</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="film">
+              <div class="movie-card-1">
+                <div class="move-card-img">
+                  <img src="images/post-2.jpg" alt="Hdfilmgecesi" style="border-radius: 6px" />
+                </div>
+                <div class="movie-card-text" style="border-radius: 6px">
+                  <div class="flag">
+                    <div class="tr-flag">
+                      <img src="images/tr-flag.png" alt="" />
+                    </div>
+                    <div class="cc">
+                      <i class="fa-solid fa-closed-captioning"></i>
+                    </div>
+                  </div>
+                  <div class="movie-card-bottom">
+                    <div class="kat">
+                      <span class="yıl">2022</span>
+                      <span class="yorum"><i class="fa-solid fa-comment"
+                          style="color: #fff; padding-right: 5px"></i>255</span>
+                      <span class="imdb"><i class="fa-solid fa-star"
+                          style="color: gold; margin-right: 5px"></i>7.5</span>
+                    </div>
+                    <p class="movie-name">Kara Panter: Yaşasın Wakanda</p>
+                    <p class="movie-name-en">Wakamba Forever</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="film">
+              <div class="movie-card-1">
+                <div class="move-card-img">
+                  <img src="images/post-3.png" alt="Hdfilmgecesi" style="border-radius: 6px" />
+                </div>
+                <div class="movie-card-text" style="border-radius: 6px">
+                  <div class="flag">
+                    <div class="tr-flag">
+                      <img src="images/tr-flag.png" alt="" />
+                    </div>
+                    <div class="cc">
+                      <i class="fa-solid fa-closed-captioning"></i>
+                    </div>
+                  </div>
+                  <div class="movie-card-bottom">
+                    <div class="kat">
+                      <span class="yıl">2022</span>
+                      <span class="yorum"><i class="fa-solid fa-comment"
+                          style="color: #fff; padding-right: 5px"></i>255</span>
+                      <span class="imdb"><i class="fa-solid fa-star"
+                          style="color: gold; margin-right: 5px"></i>7.5</span>
+                    </div>
+                    <p class="movie-name">Kara Panter: Yaşasın Wakanda</p>
+                    <p class="movie-name-en">Wakamba Forever</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="film">
+              <div class="movie-card-1">
+                <div class="move-card-img">
+                  <img src="images/post-4.jpg" alt="Hdfilmgecesi" style="border-radius: 6px" />
+                </div>
+                <div class="movie-card-text" style="border-radius: 6px">
+                  <div class="flag">
+                    <div class="tr-flag">
+                      <img src="images/tr-flag.png" alt="" />
+                    </div>
+                    <div class="cc">
+                      <i class="fa-solid fa-closed-captioning"></i>
+                    </div>
+                  </div>
+                  <div class="movie-card-bottom">
+                    <div class="kat">
+                      <span class="yıl">2022</span>
+                      <span class="yorum"><i class="fa-solid fa-comment"
+                          style="color: #fff; padding-right: 5px"></i>255</span>
+                      <span class="imdb"><i class="fa-solid fa-star"
+                          style="color: gold; margin-right: 5px"></i>7.5</span>
+                    </div>
+                    <p class="movie-name">Kara Panter: Yaşasın Wakanda</p>
+                    <p class="movie-name-en">Wakamba Forever</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="film">
+              <div class="movie-card-1">
+                <div class="move-card-img">
+                  <img src="images/post-5.jpg" alt="Hdfilmgecesi" style="border-radius: 6px" />
+                </div>
+                <div class="movie-card-text" style="border-radius: 6px">
+                  <div class="flag">
+                    <div class="tr-flag">
+                      <img src="images/tr-flag.png" alt="" />
+                    </div>
+                    <div class="cc">
+                      <i class="fa-solid fa-closed-captioning"></i>
+                    </div>
+                  </div>
+                  <div class="movie-card-bottom">
+                    <div class="kat">
+                      <span class="yıl">2022</span>
+                      <span class="yorum"><i class="fa-solid fa-comment"
+                          style="color: #fff; padding-right: 5px"></i>255</span>
+                      <span class="imdb"><i class="fa-solid fa-star"
+                          style="color: gold; margin-right: 5px"></i>7.5</span>
+                    </div>
+                    <p class="movie-name">Kara Panter: Yaşasın Wakanda</p>
+                    <p class="movie-name-en">Wakamba Forever</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="film">
+              <div class="movie-card-1">
+                <div class="move-card-img">
+                  <img src="images/post-6.jpg" alt="Hdfilmgecesi" style="border-radius: 6px" />
+                </div>
+                <div class="movie-card-text" style="border-radius: 6px">
+                  <div class="flag">
+                    <div class="tr-flag">
+                      <img src="images/tr-flag.png" alt="" />
+                    </div>
+                    <div class="cc">
+                      <i class="fa-solid fa-closed-captioning"></i>
+                    </div>
+                  </div>
+                  <div class="movie-card-bottom">
+                    <div class="kat">
+                      <span class="yıl">2022</span>
+                      <span class="yorum"><i class="fa-solid fa-comment"
+                          style="color: #fff; padding-right: 5px"></i>255</span>
+                      <span class="imdb"><i class="fa-solid fa-star"
+                          style="color: gold; margin-right: 5px"></i>7.5</span>
+                    </div>
+                    <p class="movie-name">Kara Panter: Yaşasın Wakanda</p>
+                    <p class="movie-name-en">Wakamba Forever</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="film">
+              <div class="movie-card-1">
+                <div class="move-card-img">
+                  <img src="images/post-7.jpg" alt="Hdfilmgecesi" style="border-radius: 6px" />
+                </div>
+                <div class="movie-card-text" style="border-radius: 6px">
+                  <div class="flag">
+                    <div class="tr-flag">
+                      <img src="images/tr-flag.png" alt="" />
+                    </div>
+                    <div class="cc">
+                      <i class="fa-solid fa-closed-captioning"></i>
+                    </div>
+                  </div>
+                  <div class="movie-card-bottom">
+                    <div class="kat">
+                      <span class="yıl">2022</span>
+                      <span class="yorum"><i class="fa-solid fa-comment"
+                          style="color: #fff; padding-right: 5px"></i>255</span>
+                      <span class="imdb"><i class="fa-solid fa-star"
+                          style="color: gold; margin-right: 5px"></i>7.5</span>
+                    </div>
+                    <p class="movie-name">Kara Panter: Yaşasın Wakanda</p>
+                    <p class="movie-name-en">Wakamba Forever</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="film">
+              <div class="movie-card-1">
+                <div class="move-card-img">
+                  <img src="images/post-8.jpg" alt="Hdfilmgecesi" style="border-radius: 6px" />
+                </div>
+                <div class="movie-card-text" style="border-radius: 6px">
+                  <div class="flag">
+                    <div class="tr-flag">
+                      <img src="images/tr-flag.png" alt="" />
+                    </div>
+                    <div class="cc">
+                      <i class="fa-solid fa-closed-captioning"></i>
+                    </div>
+                  </div>
+                  <div class="movie-card-bottom">
+                    <div class="kat">
+                      <span class="yıl">2022</span>
+                      <span class="yorum"><i class="fa-solid fa-comment"
+                          style="color: #fff; padding-right: 5px"></i>255</span>
+                      <span class="imdb"><i class="fa-solid fa-star"
+                          style="color: gold; margin-right: 5px"></i>7.5</span>
+                    </div>
+                    <p class="movie-name">Kara Panter: Yaşasın Wakanda</p>
+                    <p class="movie-name-en">Wakamba Forever</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="film">
+              <div class="movie-card-1">
+                <div class="move-card-img">
+                  <img src="images/post-9.jpg" alt="Hdfilmgecesi" style="border-radius: 6px" />
+                </div>
+                <div class="movie-card-text" style="border-radius: 6px">
+                  <div class="flag">
+                    <div class="tr-flag">
+                      <img src="images/tr-flag.png" alt="" />
+                    </div>
+                    <div class="cc">
+                      <i class="fa-solid fa-closed-captioning"></i>
+                    </div>
+                  </div>
+                  <div class="movie-card-bottom">
+                    <div class="kat">
+                      <span class="yıl">2022</span>
+                      <span class="yorum"><i class="fa-solid fa-comment"
+                          style="color: #fff; padding-right: 5px"></i>255</span>
+                      <span class="imdb"><i class="fa-solid fa-star"
+                          style="color: gold; margin-right: 5px"></i>7.5</span>
+                    </div>
+                    <p class="movie-name">Kara Panter: Yaşasın Wakanda</p>
+                    <p class="movie-name-en">Wakamba Forever</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="film">
+              <div class="movie-card-1">
+                <div class="move-card-img">
+                  <img src="images/post-10.jpg" alt="Hdfilmgecesi" style="border-radius: 6px" />
+                </div>
+                <div class="movie-card-text" style="border-radius: 6px">
+                  <div class="flag">
+                    <div class="tr-flag">
+                      <img src="images/tr-flag.png" alt="" />
+                    </div>
+                    <div class="cc">
+                      <i class="fa-solid fa-closed-captioning"></i>
+                    </div>
+                  </div>
+                  <div class="movie-card-bottom">
+                    <div class="kat">
+                      <span class="yıl">2022</span>
+                      <span class="yorum"><i class="fa-solid fa-comment"
+                          style="color: #fff; padding-right: 5px"></i>255</span>
+                      <span class="imdb"><i class="fa-solid fa-star"
+                          style="color: gold; margin-right: 5px"></i>7.5</span>
+                    </div>
+                    <p class="movie-name">Kara Panter: Yaşasın Wakanda</p>
+                    <p class="movie-name-en">Wakamba Forever</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="film">
+              <div class="movie-card-1">
+                <div class="move-card-img">
+                  <img src="images/post-11.jpg" alt="Hdfilmgecesi" style="border-radius: 6px" />
+                </div>
+                <div class="movie-card-text" style="border-radius: 6px">
+                  <div class="flag">
+                    <div class="tr-flag">
+                      <img src="images/tr-flag.png" alt="" />
+                    </div>
+                    <div class="cc">
+                      <i class="fa-solid fa-closed-captioning"></i>
+                    </div>
+                  </div>
+                  <div class="movie-card-bottom">
+                    <div class="kat">
+                      <span class="yıl">2022</span>
+                      <span class="yorum"><i class="fa-solid fa-comment"
+                          style="color: #fff; padding-right: 5px"></i>255</span>
+                      <span class="imdb"><i class="fa-solid fa-star"
+                          style="color: gold; margin-right: 5px"></i>7.5</span>
+                    </div>
+                    <p class="movie-name">Kara Panter: Yaşasın Wakanda</p>
+                    <p class="movie-name-en">Wakamba Forever</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="film">
+              <div class="movie-card-1">
+                <div class="move-card-img">
+                  <img src="images/post-12.jpg" alt="Hdfilmgecesi" style="border-radius: 6px" />
+                </div>
+                <div class="movie-card-text" style="border-radius: 6px">
+                  <div class="flag">
+                    <div class="tr-flag">
+                      <img src="images/tr-flag.png" alt="" />
+                    </div>
+                    <div class="cc">
+                      <i class="fa-solid fa-closed-captioning"></i>
+                    </div>
+                  </div>
+                  <div class="movie-card-bottom">
+                    <div class="kat">
+                      <span class="yıl">2022</span>
+                      <span class="yorum"><i class="fa-solid fa-comment"
+                          style="color: #fff; padding-right: 5px"></i>255</span>
+                      <span class="imdb"><i class="fa-solid fa-star"
+                          style="color: gold; margin-right: 5px"></i>7.5</span>
+                    </div>
+                    <p class="movie-name">Kara Panter: Yaşasın Wakanda</p>
+                    <p class="movie-name-en">Wakamba Forever</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <aside class="side">
+        <section class="nette-blok">
+          <p>En Çok İzlenen Filmler</span>
+            <ul>
+              <li><a href="#">
+                <div class="say">1</div>
+                <div class="net-ic">
+                  <div class="net-img">
+                    <img src="nette-ilk/batman.jpg" alt="">
+                  </div>
+                  <div class="net-text">
+                    <div class="net-movie-name">
+                      Yeşil Fener
+                    </div>
+                    <div class="dil-imdb">
+                      <span class="net-tr"><img src="images/tr-flag.png" alt="">Türkçe Dublaj</span>
+                      <span class="net-imdb">
+                        <i class="fa-solid fa-star"></i>7.5
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a></li>
+              <li><a href="#">
+                <div class="say">2</div>
+                <div class="net-ic">
+                  <div class="net-img">
+                    <img src="nette-ilk/sakra.jpg" alt="">
+                  </div>
+                  <div class="net-text">
+                    <div class="net-movie-name">
+                      Vahşet izle
+                    </div>
+                    <div class="dil-imdb">
+                      <span class="net-tr"><img src="images/tr-flag.png" alt=""><i class="fa-solid fa-closed-captioning" style="margin-right: 3px; font-size: 12px;"></i>Dublaj & Altyazı</span>
+                      <span class="net-imdb">
+                        <i class="fa-solid fa-star"></i>7.5
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a></li>
+              <li><a href="#">
+                <div class="say">1</div>
+                <div class="net-ic">
+                  <div class="net-img">
+                    <img src="nette-ilk/batman.jpg" alt="">
+                  </div>
+                  <div class="net-text">
+                    <div class="net-movie-name">
+                      oscar çölerde
+                    </div>
+                    <div class="dil-imdb">
+                      <span class="net-tr"><img src="images/tr-flag.png" alt="">Türkçe Dublaj</span>
+                      <span class="net-imdb">
+                        <i class="fa-solid fa-star"></i>7.5
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a></li>
+              <li><a href="#">
+                <div class="say">3</div>
+                <div class="net-ic">
+                  <div class="net-img">
+                    <img src="nette-ilk/sakra.jpg" alt="">
+                  </div>
+                  <div class="net-text">
+                    <div class="net-movie-name">
+                      Batman Yükseliyor
+                    </div>
+                    <div class="dil-imdb">
+                      <span class="net-tr"><img src="images/tr-flag.png" alt=""><i class="fa-solid fa-closed-captioning" style="margin-right: 3px; font-size: 12px;"></i>Dublaj & Altyazı</span>
+                      <span class="net-imdb">
+                        <i class="fa-solid fa-star"></i>7.5
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a></li>
+              <li><a href="#">
+                <div class="say">4</div>
+                <div class="net-ic">
+                  <div class="net-img">
+                    <img src="nette-ilk/batman.jpg" alt="">
+                  </div>
+                  <div class="net-text">
+                    <div class="net-movie-name">
+                      Hızlı ve Öfkeli
+                    </div>
+                    <div class="dil-imdb">
+                      <span class="net-tr"><img src="images/tr-flag.png" alt="">Türkçe Dublaj</span>
+                      <span class="net-imdb">
+                        <i class="fa-solid fa-star"></i>7.5
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a></li>
+              <li><a href="#">
+                <div class="say">5</div>
+                <div class="net-ic">
+                  <div class="net-img">
+                    <img src="nette-ilk/sakra.jpg" alt="">
+                  </div>
+                  <div class="net-text">
+                    <div class="net-movie-name">
+                      Yeşil Fener
+                    </div>
+                    <div class="dil-imdb">
+                      <span class="net-tr"><img src="images/tr-flag.png" alt=""><i class="fa-solid fa-closed-captioning" style="margin-right: 3px; font-size: 12px;"></i>Dublaj & Altyazı</span>
+                      <span class="net-imdb">
+                        <i class="fa-solid fa-star"></i>7.5
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a></li>
+            </ul>
+        </section>
+      </aside>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/glide.js"></script>
+  <script>
+    new Glide(".glide", {
+      type: "carousel",
+      startAt: 0,
+      perView: 5,
+      gap: 0,
+      breakpoints: {
+        991: { perView: 4, animationDuration: 150 },
+        842: { perView: 3, animationDuration: 150 },
+        632: { perView: 2, animationDuration: 150 },
+        280: { perView: 1, animationDuration: 150 },
+      },
+    }).mount();
+  </script>
+  <script>
+    new Glide(".st", {
+      type: "carousel",
+      startAt: 0,
+      perView: 5,
+      gap: 10,
+      breakpoints: {
+        632: { perView: 2, animationDuration: 150 },
+        280: { perView: 1, animationDuration: 150 },
+      },
+    }).mount();
+  </script>
+</body>
+
 </html>
