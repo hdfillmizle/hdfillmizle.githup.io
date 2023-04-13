@@ -1081,6 +1081,12 @@ body {
     font-size: 13px;
   }
 
+  .history {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 2px;
+  }
+
   .fregman-name {
     font-size: 11px;
     font-weight: 500;
