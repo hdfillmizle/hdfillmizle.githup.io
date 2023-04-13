@@ -131,6 +131,7 @@ body {
   background: #1e232b;
   min-width: 18% !important;
   border: 1px solid rgb(185, 185, 185);
+  border-radius: 5px;
 }
 
 .hdfilmgecesi-navbar form .search-dat {
@@ -142,6 +143,7 @@ body {
   background: none;
   border: none;
   outline: none;
+  border-radius: 5px;
 }
 
 .hdfilmgecesi-navbar .menu-icon,
@@ -1047,17 +1049,7 @@ body {
   }
 
   .flag {
-    margin-top: -1px;
-    height: 17px;
-  }
-
-  .cc .fa-closed-captioning {
-    margin-top: 3.1px;
-    font-size: 11.5px;
-  }
-
-  .tr-flag {
-    margin-right: 3px;
+    margin-top: 0px;
   }
 }
 
@@ -1194,6 +1186,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 5px;
   }
 
   .hdfilmgecesi-navbar .menu-icon {
@@ -1212,6 +1205,10 @@ body {
 
   .hdfilmgecesi-navbar .cancel-icon.show {
     display: block;
+  }
+
+  .nette-blok ul li a .net-img {
+    width: 19%;
   }
 }
 
