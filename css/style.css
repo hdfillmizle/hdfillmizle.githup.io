@@ -29,19 +29,6 @@ body {
   background-color: #2d2d2e;
 }
 
-::-webkit-scrollbar {
-  width: 2px;
-  height: 2px;
-}
-
-.fregman-slider::-webkit-scrollbar-thumb {
-  background-color: #18181873;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 255, 0.548);
-}
-
 #progress {
   position: fixed;
   bottom: 20px;
@@ -1021,7 +1008,7 @@ body {
   }
 
   .fregman-img img {
-    border: 2px solid #4635dc;
+    border: 2.9px solid #4635dc;
   }
 
   .fregman {
@@ -1083,7 +1070,7 @@ body {
 
 @media (max-width: 450px) {
   .blok-title span {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .blok-title .sub-menu-2 {
@@ -1094,12 +1081,16 @@ body {
     font-size: 13px;
   }
 
+  .fregman-name {
+    font-size: 11px;
+    font-weight: 500;
+  }
+
   .film,
   .dizi {
     flex: 0 0 calc(52.9% - 20px);
   }
 }
-
 
 @media (max-width: 310px) {
   .film,
@@ -1236,7 +1227,7 @@ body {
   }
 
   .scroll {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 
