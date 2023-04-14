@@ -51,8 +51,7 @@ body {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  font-size: 35px;
-  color: #fff;
+  font-size: 30px;
 }
 
 .hdfilmgecesi-advert {
@@ -1045,7 +1044,7 @@ body {
   #progress-value {
     height: calc(115% - 15px);
     width: calc(115% - 15px);
-    font-size: 22px;
+    font-size: 15px;
   }
 
   .flag {
