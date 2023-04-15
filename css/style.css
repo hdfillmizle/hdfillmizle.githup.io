@@ -553,6 +553,7 @@ body {
   background: #272727;
   padding: 15px 0 20px 0;
   border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   align-self: flex-start;
 }
 
@@ -885,78 +886,54 @@ body {
   color: #b3b3b3;
 }
 
-.footer-top-container {
-  max-width: 1070px;
-  background-color: rgb(46, 46, 46);
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 13px;
-}
-
-.footer-back-container {
-  width: auto;
-  padding: 20px;
-}
-
-.footer-back-container .devami {
-  cursor: pointer;
-  position: relative;
-  display: block;
-  width: 130px;
-  padding: 6px 0 0 30px;
-  height: 32px;
-  margin: 0 auto !important;
-  margin-top: -15px !important;
-  margin-bottom: -10px !important;
-  z-index: 1;
-  background-color: #1d1f20;
-  box-shadow: 0 0 45px #212729;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzJGOERFRTIwNERCMTFFQTlCMzQ4OEQyQzgyNjlENEEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzJGOERFRTMwNERCMTFFQTlCMzQ4OEQyQzgyNjlENEEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDMkY4REVFMDA0REIxMUVBOUIzNDg4RDJDODI2OUQ0QSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDMkY4REVFMTA0REIxMUVBOUIzNDg4RDJDODI2OUQ0QSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PnS51mIAAADOSURBVHjaYvj//78REGcCMQOJOAeItUCM4/8hoIEEzb1QPTtAHGsg/kCCId1QtS+B2AwmqEakIcia5UFiyJLIhjQSoxndAHyGYNWMzQB0Q/KAuByXZpgBCUC8DI8h2DQzAfFyIA4DcfZCFW3GYggI/MZi8wGo3DoQRwgpLaAbYgrEBmhi+6FqQRbzwQRZgfgkDkOwad6HLRAJGYKhGVss4DIEq2Zc0YhsyAIgXoFLMy4DYIacQIrGvbjChRFsCnbACsRngfg3EBvjUgQQYABhtxvlSeLUSQAAAABJRU5ErkJggg==);
-  background-position: 7px 8px;
-  background-repeat: no-repeat;
-}
-
-.footer-text-content {
-  height: 185px;
-  overflow: hidden;
-  position: relative;
-}
-
-.footer-text-content.active {
-  height: 100%;
-  padding-bottom: 20px;
-}
-
-.affterr {
-  content: "";
-  display: block;
-  position: absolute;
+.hdfilmgecesi-container footer {
   width: 100%;
-  height: 59px;
-  bottom: 134px;
-  left: 0;
-  background: linear-gradient(to bottom, rgb(0 0 0 / 0%) 0%, #303030f2 100%);
 }
 
-.footer-text-content h1 {
-  display: inline;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
+.footer-top-text-container {
+  position: relative;
+  height: 220px;
+  padding: 20px;
+  overflow: hidden;
+  font-size: 12px;
+  text-align: center;
+  background-color: #272727;
+  transition: 0.5s;
 }
 
-.footer-text-content p {
-  margin-bottom: 10px;
-  color: grey;
+.footer-top-text-container.active {
+  height: 609px;
 }
 
-.footer-bottom-container {
-  background-color: rgb(24, 23, 23);
-  color: grey;
-  padding: 15px;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 13px;
-  margin-bottom: 15px;
-  border-radius: 0 0 10px 10px;
+.text-container {
+  width: 100%;
+  background-color: #272727;
+  display: flex;
+  padding: 8px 20px;
+  justify-content: center;
+}
+
+.text-container .text-btn {
+  color: #fff;
+  font-size: 10px;
+  padding: 10px;
+  background-color: #0e0e20;
+  border-radius: 10px;
+}
+
+.footer-top-text-container p {
+  margin-bottom: 17px;
+  color: #9c9c9c;
+}
+
+.footer-top-text-container h4 {
+  color: #0026ff;
+}
+
+.footer-bottom-text-container {
+  padding: 20px;
+  font-size: 12px;
+  background-color: #14181f;
 }
 
 @media (max-width: 1070px) {
@@ -1056,6 +1033,12 @@ body {
   .film,
   .dizi {
     flex: 0 0 calc(35.3% - 20px);
+  }
+
+  .footer-bottom-text-container {
+    padding: 13px;
+    font-size: 10px;
+    background-color: #14181f;
   }
 }
 
