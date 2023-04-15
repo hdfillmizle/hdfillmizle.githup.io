@@ -17,6 +17,10 @@
   user-select: none;
 }
 
+::-webkit-scrollbar-button {
+  display: none;
+}
+
 .col-xs-4 {
   display: none;
 }
@@ -902,7 +906,7 @@ body {
 }
 
 .footer-top-text-container.active {
-  height: 609px;
+  height: auto;
 }
 
 .text-container {
