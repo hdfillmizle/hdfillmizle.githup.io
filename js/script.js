@@ -94,3 +94,20 @@ dizicatagori.addEventListener('click', ()=>{
     topdizi.style.display='block';
 });
 
+const footertoptextcontainer = document.getElementsByClassName('footer-top-text-container')[0]
+const textbtn = document.getElementsByClassName('text-btn')[0]
+
+textbtn.addEventListener('click', () => {
+    footertoptextcontainer.classList.toggle('active');;
+});
+
+function addOne()
+{
+    const loadMoredisplay = 
+    document.getElementById("loadMore-display");
+    const inside = loadMoredisplay.innerHTML;
+    const number = parseInt(inside)
+    const larger = number + 1;
+    loadMoredisplay.innerHTML = larger;
+}
+
