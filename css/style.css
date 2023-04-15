@@ -17,7 +17,7 @@
   user-select: none;
 }
 
-::-webkit-scrollbar-button {
+::-webkit-scrollbar {
   display: none;
 }
 
@@ -1043,6 +1043,10 @@ body {
     padding: 13px;
     font-size: 10px;
     background-color: #14181f;
+  }
+
+  .duyuru {
+    font-size: 10px;
   }
 }
 
