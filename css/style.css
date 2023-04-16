@@ -558,6 +558,8 @@ body {
   padding: 15px 0 20px 0;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   align-self: flex-start;
 }
 
