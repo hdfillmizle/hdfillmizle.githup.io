@@ -109,4 +109,10 @@ function addOne() {
   const number = parseInt(inside);
   const larger = number + 1;
   loadMoredisplay.innerHTML = larger;
+
+  const mydisplay = document.getElementById("my-display");
+  const dz = mydisplay.innerHTML;
+  const dznumber = parseInt(dz);
+  const dzlarger = dznumber + 1;
+  mydisplay.innerHTML = dzlarger;
 }
