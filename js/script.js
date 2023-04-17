@@ -78,6 +78,10 @@ const filmcatagori = document.getElementById("film-catagori");
 const dizicatagori = document.getElementById("dizi-catagori");
 const topfilm = document.getElementById("top-film");
 const topdizi = document.getElementById("top-dizi");
+const filmcatagori2 = document.getElementById("film-catagori2");
+const dizicatagori2 = document.getElementById("dizi-catagori2");
+const topfilm2 = document.getElementById("top-film2");
+const topdizi2 = document.getElementById("top-dizi2");
 const loadMore = document.getElementById("loadMore");
 const More = document.getElementById("More");
 
@@ -92,6 +96,18 @@ dizicatagori.addEventListener("click", () => {
   dizicatagori.style.cssText += "color:#000000;background-color:#eaad2c";
   topfilm.style.display = "none";
   topdizi.style.display = "block";
+});
+filmcatagori2.addEventListener("click", () => {
+  filmcatagori2.style.cssText += "color:#000000;background-color:#eaad2c";
+  dizicatagori2.style.cssText += "color:#fff;background-color:#ffffff00";
+  topfilm2.style.display = "block";
+  topdizi2.style.display = "none";
+});
+dizicatagori2.addEventListener("click", () => {
+  filmcatagori2.style.cssText += "color:#fff;background-color:#ffffff00";
+  dizicatagori2.style.cssText += "color:#000000;background-color:#eaad2c";
+  topfilm2.style.display = "none";
+  topdizi2.style.display = "block";
 });
 
 const footertoptextcontainer = document.getElementsByClassName(
