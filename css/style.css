@@ -110,16 +110,16 @@ body {
   display: flex;
 }
 
-.hdfilmgecesi-navbar .nav-items >li {
+.hdfilmgecesi-navbar .nav-items > li {
   padding: 0 15px;
 }
 
-.hdfilmgecesi-navbar .nav-items >li a {
+.hdfilmgecesi-navbar .nav-items > li a {
   font-size: 20px;
   font-family: "Russo One", sans-serif;
 }
 
-.hdfilmgecesi-navbar .nav-items >li a:hover,
+.hdfilmgecesi-navbar .nav-items > li a:hover,
 .hdfilmgecesi-navbar .nav-items .dropdown-menu a:hover .fa-angle-down {
   color: #0004ff;
 }
@@ -128,25 +128,61 @@ body {
   margin-left: 4px;
 }
 
-.hdfilmgecesi-navbar form {
-  display: flex;
+.wrapper {
+  width: 200px;
   height: 40px;
-  background: #1e232b;
-  min-width: 18% !important;
-  border: 1px solid rgb(185, 185, 185);
-  border-radius: 5px;
+  background-color: #2d2d2e;
+  border-radius: 2px;
+  z-index: 1;
 }
 
-.hdfilmgecesi-navbar form .search-dat {
+.wrapper #search {
   width: 100%;
   height: 100%;
-  padding: 0 10px;
-  color: #fff;
-  font-weight: 500;
-  background: none;
   border: none;
   outline: none;
-  border-radius: 5px;
+  padding: 0 6px;
+  border-radius: 2px;
+  background-color: #2d2d2e;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .results {
+  display: none;
+  height: 300px;
+  overflow-y: scroll;
+  background-color: #0e0e20;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.wrapper .results ul li {
+  border-radius: 3px;
+  opacity: 0;
+  display: none;
+  padding: 10px;
+}
+
+.wrapper .results ul li:hover {
+  background-color: #1a1a2b;
+}
+
+.wrapper .results ul li a {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.show .results {
+  display: block;
+}
+
+.show .results ul li {
+  opacity: 1;
+  display: flex;
 }
 
 .hdfilmgecesi-navbar .menu-icon,
@@ -1268,9 +1304,9 @@ body {
     display: none;
   }
 
-  .hdfilmgecesi-navbar form {
+  .wrapper {
     position: absolute;
-    top: 90px;
+    top: 60px;
     right: 23px;
     opacity: 0;
     pointer-events: none;
@@ -1278,42 +1314,24 @@ body {
     z-index: 100;
   }
 
-  .hdfilmgecesi-navbar form.active {
-    opacity: 1;
-    top: 123px;
-    pointer-events: auto;
-  }
-
-  .hdfilmgecesi-navbar form .search-dat {
-    border: 1px solid rgba(185, 185, 185, 0.425);
-    z-index: 100;
-  }
-
-  .hdfilmgecesi-navbar form::before {
+  .wrapper::before {
     position: absolute;
+    top: -9px;
+    right: 7px;
+    display: block;
     content: "";
-    top: -13px;
-    right: 0;
     width: 0;
     height: 0;
-    margin: -20px 0 0;
-    border: 10px solid transparent;
-    border-bottom-color: #1e232b;
+    border-style: solid;
+    border-width: 0 5.5px 6px;
+    border-color: transparent transparent #ffffff transparent;
   }
 
-  .hdfilmgecesi-navbar form:after {
-    position: absolute;
-    content: "";
-    height: 60px;
-    width: calc(100% + 20px);
-    padding: 2px;
-    background: #1e232b;
-    border-radius: 2px;
-    z-index: -1;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 5px;
+  .wrapper.active {
+    opacity: 1;
+    top: 87px;
+    pointer-events: auto;
+    border-top: 3px solid #ffffff;
   }
 
   .hdfilmgecesi-navbar .menu-icon {
