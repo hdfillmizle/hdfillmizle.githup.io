@@ -1,8 +1,78 @@
+let searchable = [
+  '<a href="https://www.hdfilmcehennemi.life/prayers-for-the-stolen-2/"> Yangın Gecesi</a>',
+  '<a href="https://www.hdfilmcehennemi.life/rift/">Rift</a>',
+  '<a href="">Yenilmezler</a>',
+  '<a href="">Yenilmezler: Ultron Çağı</a>',
+  '<a href="">Yenilmezler Son Oyun</a>',
+  '<a href="#">Yenilmezler Sonsuzluk Savaşı</a>',
+  '<a href="#">Avengers Infinity War</a>',
+  '<a href="#">Avatar</a>',
+  '<a href="#">Avatar 2</a>',
+  '<a href="#">John Wick</a>',
+  '<a href="#">John Wick 2</a>',
+  '<a href="#">John Wick 3 Parabellum</a>',
+  '<a href="#">john wick: chapter 4</a>',
+  '<a href="#">Karınca Adam</a>',
+  '<a href="#">Ant Man</a>',
+  '<a href="#">Elestr</a>',
+  '<a href="#">Elestr</a>',
+  '<a href="#">Elestr</a>',
+  '<a href="#">Elestr</a>',
+  '<a href="#">Elestr</a>',
+  '<a href="#">Elestr</a>',
+  '<a href="#">Elestr</a>',
+  '<a href="#">Elestr</a>',
+  '<a href="#">Elestr</a>',
+  '<a href="#">Elestr</a>',
+  '<a href="#">Elestr</a>',
+  '<a href="#">Elestr</a>',
+  '<a href="#">Elestr</a>',
+  '<a href="#">Elestr</a>',
+];
+
+const searchInput = document.getElementById('search');
+const searchWrapper = document.querySelector('.wrapper');
+const resultsWrapper = document.querySelector('.results');
+
+searchInput.addEventListener('keyup', () => {
+  let results = [];
+  let input = searchInput.value;
+  if (input.length) {
+    results = searchable.filter((item) => {
+      return item.toLowerCase().includes(input.toLowerCase());
+    });
+  }
+  renderResults(results);
+});
+
+function renderResults(results) {
+  if (!results.length) {
+    return searchWrapper.classList.remove('show');
+  }
+
+  const content = results
+    .map((item) => {
+      return `<li>${item}</li>`;
+    })
+    .join('');
+
+  searchWrapper.classList.add('show');
+  resultsWrapper.innerHTML = `<ul>${content}</ul>`;
+}
+
+
+
+
+
+
+
+
+
 const menuBtn = document.querySelector(".menu-icon span");
 const searchBtn = document.querySelector(".search-icon");
 const cancelBtn = document.querySelector(".cancel-icon");
 const items = document.querySelector(".nav-items");
-const form = document.querySelector("form");
+const form = document.querySelector(".wrapper");
 menuBtn.onclick = () => {
   items.classList.add("active");
   menuBtn.classList.add("hide");
